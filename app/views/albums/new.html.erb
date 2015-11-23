@@ -1,0 +1,8 @@
+<h1>Create Album</h1>
+
+<form action="<%= albums_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="band[name]">Band Name</label><input type="text" name="band[name]" value="<%= @band.name if @band %>"> <br>
+  <input type="submit" value="Create Album">
+
+</form>
